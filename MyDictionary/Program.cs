@@ -11,13 +11,9 @@ namespace MyDictionary
             yasisim .Add(10, "Esmanur");
             yasisim .Add(7, "Yusuf");
 
-            foreach (var yas in yasisim .GetKeys)
+            for (int i = 0; i < yasisim.Length; i++)
             {
-                Console.WriteLine(yas);
-            }
-            foreach (var isim in yasisim.GetValues)
-            {
-                Console.WriteLine(isim);
+                Console.WriteLine("Yaş:" + yasisim.GetKeys[i] +" "+"İsim:" + yasisim.GetValues[i]);
             }
             Console.WriteLine("--------------------");
             Console.WriteLine(yasisim .Length);
